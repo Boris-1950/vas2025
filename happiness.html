@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+        <!-- ===== SEO meta tags for vas2025.ru (RU + EN) ===== -->
+<!-- Russian version -->
+<title>Всемирное агентство по делам счастья – Глобальное счастье и достоинство человека</title>
+<meta name="description" content="Система из 10 координат счастья, координаты пространства счастья на основе достоинства человека для всего мира. Аналогично Декартовой системе в научно-технической революции система 10-Ц обеспечивает гуманитарные преобразования для всех и каждого человека во всём мире."/>
+<meta name="keywords" content="всемирное агентство по делам счастья, индекс счастья, достоинство человека, глобальное счастье, смысл счастья, некоммерческая организация, международное агентство счастья, ценности человека, доклад о мировом счастье, счастье как сумма ценностей человека">
+<meta http-equiv="Content-Language" content="ru">
+<!-- English version -->
+<link rel="alternate" hreflang="en" href="https://vas2025.ru/en/" />
+<link rel="alternate" hreflang="ru" href="https://vas2025.ru/" />
+<meta name="description" lang="en" content="Non-profit organization promoting global happiness, human dignity, and the values of human life. Inspired by the World Happiness Report.">
+<meta name="keywords" lang="en" content="world happiness agency, happiness index, human dignity, global happiness, meaning of happiness, non-profit organization for happiness, international happiness agency, values of human life, world happiness report, happiness as a human right">
+    
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header header--happiness">
+      <div class="header__top">
+        <div class="container">
+          <div class="header__top-inner">
+            <div class="logo-block">
+              <a class="logo" href="index.html">
+                <img
+                  src="images/lavr-venok.png"
+                  class="logo__image"
+                  alt="Лавровый венок — эмблема агентства"
+                />
+                <h1 class="logo__text">Всемирное агентство счастья</h1>
+                <p class="logo__subtitle">
+                  Сила, деньги и знания на основе достоинства человека
+                </p>
+              </a>
+            </div>
+
+            <nav class="menu" id="menu" aria-label="Основная">
+              <ul class="menu__list">
+                <li class="menu__list-item">
+                  <a class="menu__list-link" href="index.html">Главное<span></span></a>
+                </li>
+                <li class="menu__list-item">
+                  <a class="menu__list-link" href="happiness.html">Счастье<span></span></a>
+                </li>
+                <li class="menu__list-item">
+                  <a class="menu__list-link" href="about.html">О нас<span></span></a>
+                </li>
+                <li class="menu__list-item">
+                  <a class="menu__list-link" href="contacts.html">Контакты<span></span></a>
+                </li>
+              </ul>
+            </nav>
+
+            <button
+              class="burger"
+              id="burger"
+              aria-controls="menu"
+              aria-expanded="false"
+              aria-label="Открыть меню"
+            >
+              ☰
+            </button>
+          </div>
+
+          <!-- Заголовок и подзаголовок в шапке на фоне -->
+          <div class="header__happiness-inner">
+            <h2 class="header__title">Счастье</h2>
+            <!--<p class="header__description">
+              10 координат
+            </p>-->
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main id="content">
+      <section class="values">
+        <div style="display: flex; flex-direction: column; align-items: center;">
+         <!-- <h2>...</h2> -->
+          <img src="images/D2025.jpg" alt="Счастье" style="max-width: 800px; height: auto;">
+          <h2>...</h2>
+<p style="max-width: 800px; height: auto; margin: 3px;">Свобода воли (автономия человека) проявляется в его способности действовать или воздерживаться от действий в  разнообразных физических и ценностных координатах для поиска счастья.
+</p>
+
+<p style="max-width: 800px; height: auto; margin: 3px;" >Счастье есть у каждого. Оно может быть полным — до 100% индекса — и опускаться до 10% в трудные дни и годы.
+</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Всемирное агентство счастья</p>
+    </footer>
+
+    <script defer>
+      (function () {
+        const html = document.documentElement;
+        html.classList.add("js");
+
+        const burger = document.getElementById("burger");
+        const menu = document.getElementById("menu");
+        if (!burger || !menu) return;
+
+        const toggle = () => {
+          const open = burger.getAttribute("aria-expanded") === "true";
+          burger.setAttribute("aria-expanded", String(!open));
+          menu.classList.toggle("active", !open);
+          burger.classList.toggle("open", !open);
+        };
+
+        burger.addEventListener("click", toggle);
+        burger.addEventListener("keydown", (e) => {
+          if (e.key === "Enter" || e.key === " ") {
+            e.preventDefault();
+            toggle();
+          }
+        });
+      })();
+    </script>
+  </body>
+</html>

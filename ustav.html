@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+      <!-- ===== SEO meta tags for vas2025.ru (RU + EN) ===== -->
+<!-- Russian version -->
+<title>Устав — Всемирное агентство счастья</title>
+<meta name="description" content="Устав и связанные документы Всемирного агентства счастья." />
+<meta name="keywords" content="всемирное агентство по делам счастья, индекс счастья, достоинство человека, глобальное счастье, смысл счастья, некоммерческая организация, международное агентство счастья, ценности человека, доклад о мировом счастье, счастье как сумма ценностей человека">
+<meta http-equiv="Content-Language" content="ru">
+<!-- English version -->
+<link rel="alternate" hreflang="en" href="https://vas2025.ru/en/" />
+<link rel="alternate" hreflang="ru" href="https://vas2025.ru/" />
+<meta name="description" lang="en" content="Non-profit organization promoting global happiness, human dignity, and the values of human life. Inspired by the World Happiness Report.">
+<meta name="keywords" lang="en" content="world happiness agency, happiness index, human dignity, global happiness, meaning of happiness, non-profit organization for happiness, international happiness agency, values of human life, world happiness report, happiness as a human right">
+  
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="header header--ustav">
+    <div class="header__top">
+      <div class="container">
+        <div class="header__top-inner">
+          <div class="logo-block">
+            <a class="logo" href="index.html">
+              <img src="images/lavr-venok.png" class="logo__image" alt="Лавровый венок — эмблема агентства" />
+              <h1 class="logo__text">Всемирное агентство счастья</h1>
+              <p class="logo__subtitle">Сила, деньги и знания на основе достоинства человека</p>
+            </a>
+          </div>
+
+          <nav class="menu" id="menu" aria-label="Основная">
+            <ul class="menu__list">
+              <li class="menu__list-item"><a class="menu__list-link" href="index.html">Главное<span></span></a></li>
+              <li class="menu__list-item"><a class="menu__list-link" href="happiness.html">Счастье<span></span></a></li>
+              <li class="menu__list-item"><a class="menu__list-link" href="about.html">О нас<span></span></a></li>
+              <li class="menu__list-item"><a class="menu__list-link" href="contacts.html">Контакты<span></span></a></li>
+            </ul>
+          </nav>
+
+          <button class="burger" id="burger" aria-controls="menu" aria-expanded="false" aria-label="Открыть меню">☰</button>
+        </div>
+
+        <!-- Заголовок страницы -->
+        <div class="header__values">
+          <h2 class="header__title">Устав</h2>
+          <!--  <p class="header__description">Документы Всемирного агентства счастья</p> -->
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="content">
+    <section class="values">
+    <!-- <h2>...</h2> -->
+
+    <section class="pdf-list">
+      
+      <ul>
+        <li><a href="pdfs/Potokol.pdf" target="_blank" rel="noopener">Решение (PDF)</a></li>
+        <li><a href="pdfs/Ustav.pdf" target="_blank" rel="noopener">Устав (PDF)</a></li>
+        <li><a href="pdfs/dopuna.pdf" target="_blank" rel="noopener">Дополнения к Уставу (PDF)</a></li>
+        <li><a href="pdfs/pravilnik.pdf" target="_blank" rel="noopener">Правилник (PDF)</a></li>
+
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Всемирное агентство счастья</p>
+  </footer>
+
+  <script defer>
+    (function () {
+      const html = document.documentElement;
+      html.classList.add("js");
+
+      const burger = document.getElementById("burger");
+      const menu = document.getElementById("menu");
+      if (!burger || !menu) return;
+
+      const toggle = () => {
+        const open = burger.getAttribute("aria-expanded") === "true";
+        burger.setAttribute("aria-expanded", String(!open));
+        menu.classList.toggle("active", !open);
+        burger.classList.toggle("open", !open);
+      };
+
+      burger.addEventListener("click", toggle);
+      burger.addEventListener("keydown", (e) => {
+        if (e.key === "Enter" || e.key === " ") { e.preventDefault(); toggle(); }
+      });
+    })();
+  </script>
+</body>
+</html>
