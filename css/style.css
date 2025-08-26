@@ -303,18 +303,18 @@ h1 {
     */
     font-family: "Poppins", "Arial", sans-serif;
 }
-.infographic-link {
-  display: block;
-  text-align: center;
-  margin: 2em auto;
-  text-decoration: none;
-  color: #c08c2b;
-  transition: transform 0.3s ease;
+
+.modal-trigger:hover {
+  text-decoration: underline;
+  color: #0077cc;
 }
 
+
 .infographic-link:hover {
-  transform: scale(1.05);
+  text-decoration: underline;
+  color: #ee9d52;
 }
+
 
 .infographic-preview {
   border: 2px solid #cec223;
@@ -337,32 +337,7 @@ h1 {
   font-size: 1.2em;
   color: #c08c2b;
 }
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1000;
-  left: 0; top: 0;
-  width: 100%; height: 100%;
-  background-color: rgba(0,0,0,0.6);
-}
 
-.modal-content {
-  background-color: #fff;
-  margin: 10% auto;
-  padding: 2em;
-  border-radius: 8px;
-  width: 80%;
-  max-width: 600px;
-  text-align: center;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-}
-
-.close {
-  position: absolute;
-  top: 20px; right: 30px;
-  font-size: 2em;
-  cursor: pointer;
-}
 
 .open-button {
   display: inline-block;
