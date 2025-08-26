@@ -12,19 +12,14 @@ a {
   text-decoration: none;
 }
 h1 {
-  background-color: #e0e0d0;
   color: #2c2c2c;
   font-family: 'PT Serif', serif;
   padding: 16px;
   border-radius: 8px;
   text-align: center;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  /*box-shadow: 0 2px 4px rgba(0,0,0,0.1);*/
 }
-p {
-  line-height: 1.6;
-  font-size: 1.1em;
-  font-family: 'Fira Sans', sans-serif;
-}
+
 .container {
   width: 100%;
   max-width: 1200px;
@@ -299,7 +294,7 @@ p {
        - размытие: 8px
        - цвет: полупрозрачный темно-синий (rgba(42,77,105,0.08))
     */
-    text-shadow: 0 2px 8px rgba(42,77,105,0.08);
+    /*text-shadow: 0 2px 8px rgba(42,77,105,0.08);*/
     
     /* Семейство шрифтов: 
        - основной: Poppins (современный sans-serif шрифт)
