@@ -1,20 +1,16 @@
 # Установка UTF-8 для консоли
 chcp 65001 > $null
 
-# Путь к сообщению коммита
+# Получение текущей даты и времени
+$timestamp = Get-Date -Format "yyyy-MM-dd HH:mm"
+
+# Философский шаблон сообщения
+$philosophy = "Акт обновления: уточнение структуры достоинства"
+$commitMessage = "$philosophy ($timestamp)"
+
+# Создание временного файла с сообщением
 $commitFile = "commit-message.txt"
-
-# Проверка существования файла
-if (!(Test-Path $commitFile)) {
-    Write-Host "❌ Файл commit-message.txt не найден. Создай его с философским описанием."
-    exit 1
-}
-
-# Проверка кодировки файла
-$encoding = Get-Content $commitFile -Encoding Byte | Select-Object -First 3
-if ($encoding -eq @(0xEF,0xBB,0xBF)) {
-    Write-Host "⚠️ Файл содержит BOM. Рекомендуется сохранить как UTF-8 без BOM."
-}
+Set-Content -Path $commitFile -Value $commitMessage -Encoding UTF8
 
 # Добавление всех изменений
 git add .
@@ -29,4 +25,4 @@ git pull origin main --rebase
 git push origin main
 
 # Подтверждение
-Write-Host "✅ Коммит отправлен: $(Get-Date -Format 'yyyy-MM-dd HH:mm')"
+Write-Host "`n✅ Коммит отправлен: $commitMessage" -ForegroundColor Green
