@@ -8,13 +8,13 @@ git config --global i18n.logOutputEncoding utf-8
 $timestamp = Get-Date -Format "yyyy-MM-dd HH:mm"
 $commitMessage = "Акт обновления: уточнение структуры достоинства ($timestamp)"
 
-# Сохранение в файл с явной кодировкой UTF-8
-$commitFile = "commit-message.txt"
-[System.IO.File]::WriteAllText($commitFile, $commitMessage, [System.Text.Encoding]::UTF8)
+# Создание файла commit-message.txt в UTF-8 без BOM
+$utf8NoBom = New-Object System.Text.UTF8Encoding $false
+[System.IO.File]::WriteAllText("commit-message.txt", $commitMessage, $utf8NoBom)
 
 # Добавление и коммит
 git add .
-git commit -F $commitFile
+git commit -F commit-message.txt
 
 # Ребейз и пуш
 git pull origin main --rebase
