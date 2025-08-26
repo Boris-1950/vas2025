@@ -1,5 +1,8 @@
 # Установка UTF-8 для консоли
 chcp 65001 > $null
+# Установка UTF-8 для Git
+git config --global i18n.commitEncoding utf-8
+git config --global i18n.logOutputEncoding utf-8
 
 # Получение текущей даты и времени
 $timestamp = Get-Date -Format "yyyy-MM-dd HH:mm"
