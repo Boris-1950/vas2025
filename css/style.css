@@ -300,7 +300,7 @@ a {
   text-align: center;
   margin: 2em auto;
   text-decoration: none;
-  color: inherit;
+  color: #c08c2b;
   transition: transform 0.3s ease;
 }
 
@@ -309,7 +309,7 @@ a {
 }
 
 .infographic-preview {
-  border: 2px solid #e74c3c;
+  border: 2px solid #cec223;
   border-radius: 12px;
   padding: 1em;
   background-color: #fff5f5;
@@ -327,7 +327,7 @@ a {
   margin-top: 0.5em;
   font-weight: bold;
   font-size: 1.2em;
-  color: #c0392b;
+  color: #c08c2b;
 }
 .modal {
   display: none;
@@ -360,7 +360,7 @@ a {
   display: inline-block;
   margin-top: 1em;
   padding: 0.5em 1.5em;
-  background-color: #e74c3c;
+  background-color: #e7b13c;
   color: white;
   text-decoration: none;
   border-radius: 6px;
