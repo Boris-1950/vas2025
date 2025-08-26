@@ -1,31 +1,19 @@
-# Установка UTF-8 для консоли
 chcp 65001 > $null
-# Установка UTF-8 для Git
+
+# Настройка Git на UTF-8
 git config --global i18n.commitEncoding utf-8
 git config --global i18n.logOutputEncoding utf-8
 
-# Получение текущей даты и времени
+# Формирование сообщения
 $timestamp = Get-Date -Format "yyyy-MM-dd HH:mm"
+$commitMessage = "Акт обновления: уточнение структуры достоинства ($timestamp)"
 
-# Философский шаблон сообщения
-$philosophy = "Акт обновления: уточнение структуры достоинства"
-$commitMessage = "$philosophy ($timestamp)"
-
-# Создание временного файла с сообщением
-$commitFile = "commit-message.txt"
-Set-Content -Path $commitFile -Value $commitMessage -Encoding UTF8
-
-# Добавление всех изменений
+# Добавление и коммит
 git add .
+git commit -m "$commitMessage"
 
-# Коммит с сообщением из файла
-git commit -F $commitFile
-
-# Ребейз перед пушем
+# Ребейз и пуш
 git pull origin main --rebase
-
-# Пуш в репозиторий
 git push origin main
 
-# Подтверждение
 Write-Host "`n✅ Коммит отправлен: $commitMessage" -ForegroundColor Green
