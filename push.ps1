@@ -17,3 +17,7 @@ git pull origin main --rebase
 git push origin main
 
 Write-Host "`n✅ Коммит отправлен: $commitMessage" -ForegroundColor Green
+git config --global core.quotepath false
+git config --global i18n.commitEncoding utf-8
+git config --global i18n.logOutputEncoding utf-8
+
