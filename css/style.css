@@ -232,6 +232,29 @@ ul li {
   color: #2a4d69;
   font-size: 1.0em;
 }
+.infographic-page .values__grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+}
+
+.infographic-page .value-item {
+  flex: 1 1 300px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.infographic-page .value-item img {
+  height: 375px;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+}
+
 
 /* ==================== Кнопка открытия ==================== */
 .open-button {
@@ -271,6 +294,26 @@ ul li {
   .value-item img {
     width: 48px;
     height: 48px;
+  }
+}
+@media (max-width: 600px) {
+  .value-item {
+    flex: 1 1 120px;
+    max-width: 160px;
+  }
+  .value-item img {
+    width: 48px;
+    height: 48px;
+  }
+}
+@media (max-width: 600px) {
+  .infographic-page .value-item {
+    flex: 1 1 100%;
+  }
+
+  .infographic-page .value-item img {
+    height: auto;
+    max-height: 300px;
   }
 }
 
