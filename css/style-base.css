@@ -1,5 +1,10 @@
 /* === Базовая типографика === */
-body {
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html, body {
   font-family: Arial, sans-serif;
   font-size: 14px;
   line-height: 1.4;
@@ -7,7 +12,7 @@ body {
   color: #222;
   margin: 0;
   padding: 0;
-}
+  }
 
 a {
   text-decoration: none;
@@ -36,9 +41,9 @@ ul li {
 
 /* === Структурные отступы === */
 main {
-  margin-top: 10px;
+  margin-top: 0px;
   border-top: 1px solid rgba(0,0,0,0.15);
-  padding-top: 12px;
+  padding-top: 0px;
 }
 
 section {
@@ -55,13 +60,20 @@ footer {
 }
 
 /* === Шапка всех страниц === */
+.site-header {
+  margin: 0;
+  padding: 0;
+  background: none;
+  text-align: center;
+}
 .header__top {
   min-height: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 10px 0;
+  padding: 0;
+	margin: 0;
   text-align: center;
   color: #fff;
 }
@@ -90,6 +102,9 @@ footer {
   gap: 6px;
   padding: 6px 12px;
   text-align: center;
+animation: fadeIn 2s ease-in-out;
+  z-index: 2;
+
 }
 
 .header__happiness-inner {
@@ -149,26 +164,40 @@ footer {
   font-size: 2em;
   color: #fff;
   cursor: pointer;
+	background-color: transparent;
+	border: none;
+  outline: none;
   z-index: 3;
 }
-
 .burger.open {
   color: #d4af37;
 }
+@media (max-width: 768px) {
+  .burger { display: block; }
+}
+
 
 /* === Адаптивность === */
 @media (max-width: 768px) {
-  .menu {
-    display: none;
-    flex-direction: column;
+  .menu { display: none; }
+  .menu.active { display: block; }
+  .menu__list { flex-direction: column;
     align-items: center;
     gap: 10px;
+    padding: 10px 0;
+  }
+  .burger { display: block; }
   }
 
-  .menu.active {
-    display: flex;
+@media (max-width: 600px) {
+  .values__grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
   }
- 
+  .value-item img {
+    width: 48px;
+    height: 48px;
+  }
 }
 .burger {
   display: none;
