@@ -8,6 +8,7 @@ body {
   margin: 0;
   padding: 0;
 }
+
 a {
   text-decoration: none;
   color: inherit;
@@ -110,7 +111,15 @@ footer {
   color: transparent;
   -webkit-text-stroke: 1px white;
 }
+
 /* === Меню === */
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+}
+
 .menu__list {
   display: flex;
   flex-direction: row;
@@ -132,4 +141,45 @@ footer {
   text-align: center;
   display: inline-block;
   text-decoration: none;
+}
+
+/* === Бургер-меню === */
+.burger {
+  display: none;
+  font-size: 2em;
+  color: #fff;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.burger.open {
+  color: #d4af37;
+}
+
+/* === Адаптивность === */
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .menu.active {
+    display: flex;
+  }
+ 
+}
+.burger {
+  display: none;
+  font-size: 2em;
+  color: #fff;
+  cursor: pointer;
+  z-index: 3;
+}
+
+@media (max-width: 768px) {
+  .burger {
+    display: block;
+  }
 }
