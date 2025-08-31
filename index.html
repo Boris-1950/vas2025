@@ -16,8 +16,7 @@ body {
 </head>
 <body>
 <!-- ==================== ШАПКА САЙТА ==================== -->
-	<header class="header header--index">
-  <div class="burger" id="burger">☰</div>
+	<header style="background-image: url('images/header.jpg'); background-size: cover; background-position: center;">
 
 <nav class="menu" id="menu">
   <ul class="menu__list">
@@ -38,29 +37,8 @@ body {
             <p class="logo__subtitle">Сила, деньги и знания на основе достоинства человека</p>
           </div>
         </div>
-        
-        <!-- Главное меню сайта -->
-        <!-- <div class="burger" id="burger">&#9776;</div> -->
-		  <nav class="menu" id="menu" aria-label="Основная">
-          <ul class="menu__list">
-            <li class="menu__list-item"> <a class="menu__list-link" href="index.html">Главное<span></span></a> </li>
-            <li class="menu__list-item"> <a class="menu__list-link" href="happiness.html">Счастье<span></span></a> </li>
-            <li class="menu__list-item"> <a class="menu__list-link" href="about.html">О нас<span></span></a> </li>
-            <li class="menu__list-item"> <a class="menu__list-link" href="contacts.html">Контакты<span></span></a> </li>
-          </ul>
-        </nav>
-        
-        <!-- Кнопка бургер-меню для мобильных устройств -->
-        <button
-              class="burger"
-              id="burger"
-              aria-controls="menu"
-              aria-expanded="false"
-              aria-label="Открыть меню"
-            > ☰ </button>
-      </div>
-      
-      <!-- Заголовок и подзаголовок в шапке на фоне -->
+            
+      <!-- Заголовок и подзаголовок в шапке -->
       <div class="header__values">
         <h2 class="header__title">Ценности</h2>
         <!-- <p class="header__description"> ...  </p> --> 
@@ -140,43 +118,7 @@ body {
 </footer>
 
 <!-- ==================== СКРИПТ: бургер-меню ==================== --> 
-<!--  <script defer>
-      (function () {
-        const html = document.documentElement;
-        html.classList.add("js");
 
-        const burger = document.getElementById("burger");
-        const menu = document.getElementById("menu");
-        if (!burger || !menu) return;
-
-        const toggle = () => {
-          const open = burger.getAttribute("aria-expanded") === "true";
-          burger.setAttribute("aria-expanded", String(!open));
-          menu.classList.toggle("active", !open);
-          burger.classList.toggle("open", !open);
-        };
-
-        burger.addEventListener("click", toggle);
-        burger.addEventListener("keydown", (e) => {
-          if (e.key === "Enter" || e.key === " ") {
-            e.preventDefault();
-            toggle();
-          }
-        });
-      })();
-    </script> -->
-  <!--  <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const burger = document.getElementById("burger");
-    const menu = document.getElementById("menu");
-
-    burger.addEventListener("click", function () {
-      menu.classList.toggle("active");
-      burger.classList.toggle("open");
-    });
-  });
-</script>
--->
 <script>
   document.addEventListener("DOMContentLoaded", function () {
     const burger = document.getElementById("burger");
