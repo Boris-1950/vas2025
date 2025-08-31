@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="favicon/favicon.ico" />
+  <link rel="stylesheet" href="css/style-index.css" />
+  <link rel="stylesheet" href="css/style-base.css" />
+  
+<body>    
+<header style="background-image: url('images/header.jpg'); background-size: cover; background-position: center;">
+  <div class="container">
+    <div class="header__top-inner">
+      <div class="logo-block">
+        <img src="images/lavr-venok.png" class="logo__image" alt="Лавровый венок — эмблема агентства" />
+        <h1 class="logo__text">Всемирное агентство счастья</h1>
+        <p class="logo__subtitle">Сила, деньги и знания на основе достоинства человека</p>
+      </div>
+
+      <!-- Кнопка бургер-меню (только для мобильных) -->
+      <button class="burger" id="burger" aria-label="Меню" aria-expanded="false">☰</button>
+
+      <!-- Основное/мобильное меню -->
+      <nav class="menu" id="menu" aria-label="Навигация по сайту">
+        <ul class="menu__list">
+          <li class="menu__list-item"><a class="menu__list-link" href="index.html">Главное</a></li>
+          <li class="menu__list-item"><a class="menu__list-link" href="happiness.html">Счастье</a></li>
+          <li class="menu__list-item"><a class="menu__list-link" href="about.html">О нас</a></li>
+          <li class="menu__list-item"><a class="menu__list-link" href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="header__values">
+      <h2 class="header__title">Ценности</h2>
+    </div>
+  </div>
+</header>
+
+
+<main>
+  <!-- Содержимое страницы -->
+</main>
+
+<footer>
+  <p>&copy; Майоров Б. И. 2025</p>
+</footer>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const burger = document.getElementById("burger");
+    const menu = document.getElementById("menu");
+
+    if (!burger || !menu) return;
+
+    burger.addEventListener("click", function () {
+      const expanded = burger.getAttribute("aria-expanded") === "true";
+      burger.setAttribute("aria-expanded", String(!expanded));
+      menu.classList.toggle("active", !expanded);
+      burger.classList.toggle("open", !expanded);
+    });
+  });
+</script>
+
+
+</body>
+</html>
