@@ -85,13 +85,12 @@
         <div style="display: flex; flex-direction: column; align-items: center;">
          <!-- <h2>...</h2> -->
           <img src="images/D2025.jpg" alt="Счастье" style="max-width: 800px; height: auto;">
-          <h2>...</h2>
-<p style="max-width: 800px; height: auto; margin: 3px;">Свобода воли (автономия человека) проявляется в его способности действовать или воздерживаться от действий в  разнообразных физических и ценностных координатах для поиска счастья.
-</p>
-
-<p style="max-width: 800px; height: auto; margin: 3px;" >Счастье есть у каждого. Оно может быть полным — до 100% индекса — и опускаться до 10% в трудные дни и годы.
-</p>
         </div>
+<p style="max-width: 800px; right: left;">Свобода воли (автономия человека) проявляется в его способности действовать или воздерживаться от действий в  разнообразных физических и ценностных координатах для поиска счастья.
+</p>
+<p style="max-width: 800px; right: left;">Счастье есть у каждого. Оно может быть полным — до 100% индекса — и опускаться до 10% в трудные дни и годы.
+</p>
+        
       </section>
     </main>
 
@@ -99,30 +98,18 @@
       <p>&copy; 2025 Всемирное агентство счастья</p>
     </footer>
 
-    <script defer>
-      (function () {
-        const html = document.documentElement;
-        html.classList.add("js");
+    <!-- ==================== СКРИПТ: бургер-меню ==================== -->
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const burger = document.getElementById("burger");
+    const menu = document.getElementById("menu");
 
-        const burger = document.getElementById("burger");
-        const menu = document.getElementById("menu");
-        if (!burger || !menu) return;
+    if (!burger || !menu) return;
 
-        const toggle = () => {
-          const open = burger.getAttribute("aria-expanded") === "true";
-          burger.setAttribute("aria-expanded", String(!open));
-          menu.classList.toggle("active", !open);
-          burger.classList.toggle("open", !open);
-        };
-
-        burger.addEventListener("click", toggle);
-        burger.addEventListener("keydown", (e) => {
-          if (e.key === "Enter" || e.key === " ") {
-            e.preventDefault();
-            toggle();
-          }
-        });
-      })();
-    </script>
+    burger.addEventListener("click", () => {
+      menu.classList.toggle("menu--active");
+    });
+  });
+</script>
   </body>
 </html>

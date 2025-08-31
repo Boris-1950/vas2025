@@ -74,27 +74,18 @@
     <p>&copy; 2025 Всемирное агентство счастья</p>
   </footer>
 
-  <script defer>
-    (function () {
-      const html = document.documentElement;
-      html.classList.add("js");
+<!-- ==================== СКРИПТ: бургер-меню ==================== -->
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const burger = document.getElementById("burger");
+    const menu = document.getElementById("menu");
 
-      const burger = document.getElementById("burger");
-      const menu = document.getElementById("menu");
-      if (!burger || !menu) return;
+    if (!burger || !menu) return;
 
-      const toggle = () => {
-        const open = burger.getAttribute("aria-expanded") === "true";
-        burger.setAttribute("aria-expanded", String(!open));
-        menu.classList.toggle("active", !open);
-        burger.classList.toggle("open", !open);
-      };
-
-      burger.addEventListener("click", toggle);
-      burger.addEventListener("keydown", (e) => {
-        if (e.key === "Enter" || e.key === " ") { e.preventDefault(); toggle(); }
-      });
-    })();
-  </script>
+    burger.addEventListener("click", () => {
+      menu.classList.toggle("menu--active");
+    });
+  });
+</script>
 </body>
 </html>
