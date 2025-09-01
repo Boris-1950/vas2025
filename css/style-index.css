@@ -1,9 +1,15 @@
-/* Активное состояние (по желанию) */
-.burger.burger--active {
-  color: #333;
+/* === Ценности === */
+.header__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-/* === Ценности === */
 .header__values {
   max-width: 800px;
   text-align: center;
@@ -65,16 +71,4 @@
   font-weight: bold;
   color: #2a4d69;
   font-size: 1.0em;
-}
-
-/* === Адаптивность === */
-@media (max-width: 600px) {
-  .values__grid {
-    grid-template-columns: 1fr 1fr;
-    gap: 12px;
-  }
-  .value-item img {
-    width: 48px;
-    height: 48px;
-  }
 }
