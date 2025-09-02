@@ -251,8 +251,8 @@ section {
   background-color: rgba(245, 245, 245, 0);
   color: #333;
   font-size: 14px;
-  text-align: right;
-  padding: 8px 10px;
+  text-align: center;
+  padding: 4px 4px;
   border-top: 1px solid #ccc;
   width: 100%;
   box-sizing: border-box;
@@ -260,12 +260,10 @@ section {
 .footer-right p {
   margin: 0;
   line-height: 1.5;
-  text-align: right !important;
+  text-align: center !important;
 }
 
 /* === 8. Адаптивные стили === */
-
-/* Мобильные устройства */
 @media (max-width: 767px) {
   header {
     position: relative;
