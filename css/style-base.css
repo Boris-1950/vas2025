@@ -200,14 +200,12 @@ section {
   header {
     position: relative;
   }
-
   .burger-wrapper {
     position: absolute;
     top: 20px;
     right: 10px;
     z-index: 1000;
   }
-
   .burger {
     display: block;
     font-size: 32px;
@@ -222,15 +220,12 @@ section {
     text-align: center;
     line-height: 1;
   }
-
   .logo h1 {
     font-size: 1.2em;
   }
-
   .logo__text {
     font-size: 0.8em;
   }
-
   .menu {
     display: none;
     position: absolute;
@@ -242,16 +237,13 @@ section {
     min-width: 150px;
     border-radius: 5px;
   }
-
   .menu.menu--active {
     display: block;
   }
-
   .menu__list {
     flex-direction: column;
     gap: 4px;
   }
-
   .menu__list-link {
     color: #fff;
     font-size: 1.1em;
@@ -268,14 +260,12 @@ section {
   .burger-wrapper {
     display: none;
   }
-
   .menu {
     display: flex;
     position: static;
     background: none;
     width: 100%;
   }
-
   .menu__list {
     flex-direction: row;
     justify-content: flex-end;
