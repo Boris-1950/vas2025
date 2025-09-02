@@ -1,14 +1,4 @@
 /* === Ценности === */
-.header__row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 12px 20px;
-  flex-wrap: wrap;
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-}
 
 .header__values {
   max-width: 800px;
