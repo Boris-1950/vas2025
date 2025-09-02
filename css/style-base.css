@@ -50,9 +50,9 @@ ul li {
 
 /* === Структурные контейнеры === */
 main {
-  margin-top: 0px;
+  margin-top: 5px;
   border-top: 1px solid rgba(0,0,0,0.15);
-  padding-top: 0px;
+  margin-bottom: 5px;
 }
 
 section {
@@ -121,7 +121,7 @@ section {
   padding: 4px 4px;           /* внутренние отступы: вертикальные и горизонтальные */
   line-height: 1.2;            /* плотность текста — компактно, но читаемо */
   text-decoration: none;       /* убирает подчёркивание у ссылок */
-  color: rgb(143, 147, 156);   /* цвет */
+  color: rgb(62, 63, 65);   /* цвет */
   font-size: 1.0em;            /* размер шрифта */
   text-align: center;          /* выравнивание текста по центру (если ширина фиксирована) */
   white-space: nowrap;         /* предотвращает перенос текста на новую строку */

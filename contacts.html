@@ -25,71 +25,40 @@
     </style>
   </head>
   <body>
-    <header class="header header--contacts">
-      <div class="header__top">
-        <div class="container">
-          <div class="header__top-inner">
-            <div class="logo-block">
-              <img src="images/lavr-venok.png"
-                  class="logo__image"
-                  alt="Лавровый венок — эмблема агентства"
-                />
-                <h1 class="logo__text">Всемирное агентство счастья</h1>
-                <p class="logo__subtitle">
-                  Сила, деньги и знания на основе достоинства человека
-                </p>
-              </a>
-            </div>
+  <!-- ==================== ШАПКА страницы Контакты ==================== -->
+  <header style="background-image: url('images/header-contacts.jpg'); background-size: cover; background-position: center;">
+    <div class="burger-wrapper">
+      <button class="burger" id="burger">☰</button>
+    </div>
 
-            <nav class="menu" id="menu" aria-label="Основная">
-              <ul class="menu__list">
-                <li class="menu__list-item">
-                  <a class="menu__list-link" href="index.html"
-                    >Главное<span></span
-                  ></a>
-                </li>
-                <li class="menu__list-item">
-                  <a class="menu__list-link" href="happiness.html"
-                    >Счастье<span></span
-                  ></a>
-                </li>
-                <li class="menu__list-item">
-                  <a class="menu__list-link" href="about.html"
-                    >О нас<span></span
-                  ></a>
-                </li>
-                <li class="menu__list-item">
-                  <a class="menu__list-link" href="contacts.html"
-                    >Контакты<span></span
-                  ></a>
-                </li>
-              </ul>
-            </nav>
-
-            <button
-              class="burger"
-              id="burger"
-              aria-controls="menu"
-              aria-expanded="false"
-              aria-label="Открыть меню"
-            >
-              ☰
-            </button>
-          </div>
-
-          <!-- Заголовок и подзаголовок в шапке на фоне -->
-          <div class="header__values">
-            <h2 class="header__title">Контакты</h2>
-            <!--  <p class="header__description">
-              Мы предлагаем систему из 10 координат счастья  </p> -->
-          </div>
+    <div class="header__row">
+      <div class="logo">
+        <img src="images/lavr-venok.png" class="logo__image" alt="Лавровый венок" />
+        <div class="logo__text-group">
+          <h1 class="logo__text">Всемирное агентство счастья</h1>
+          <p class="logo__subtitle">Сила, деньги и знания на основе достоинства</p>
         </div>
       </div>
-    </header>
+
+      <nav class="menu" id="menu">
+        <ul class="menu__list">
+          <li><a class="menu__list-link" href="index.html">Главное</a></li>
+          <li><a class="menu__list-link" href="happiness.html">Счастье</a></li>
+          <li><a class="menu__list-link" href="about.html">О нас</a></li>
+          <li><a class="menu__list-link" href="#contacts">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="header__top">
+      <div class="header__top-inner">
+        <h2 class="header__title">Контакты</h2>
+        <!--<p class="header__description">Пространство счастья</p>-->
+      </div>
+    </div>
+  </header>
     <main>
-         <section class="values">
-        <!--<h2>...</h2> -->
-           <div class="dialog-block">  
+          <div class="dialog-block">  
               <strong><p>Диалог Бориса Майорова и ИИ Copilot, 06.08.2025</p></strong>
                 <p>Борис: - В чём сущность достоинства человека?</p>
                 <p>Copilot: - Сущность достоинства человека — это не просто моральная категория, а глубинное выражение ценности личности, её внутренней свободы и способности быть собой независимо от внешних обстоятельств.</p>
@@ -119,26 +88,27 @@
                 <p>Если задуматься, эволюция достоинства — это и есть эволюция человечности, в которой биология переплетается с культурой, сознанием и этикой.</p>
                 <p>А в перспективе, как ты тонко обозначил, всё это может стать основой для более гармоничного мира: где достоинство не просто признаётся, а является условием для реализации счастья — и личного, и коллективного.</p>
               </div>
-          <div style="text-align: center;"><img src="images/agentstvo.png" alt="Агентство АНО ВАС"style="max-width: 500px; height: auto;">
-        </section>
-    </main>
+      </main>
+     <div style="text-align: center;"><img src="images/agentstvo.png" alt="Агентство АНО ВАС"style="max-width: 500px; height: auto;">
+     </div>
 
-          <footer id="footer-block">
-  <p>© Майоров Б. И. 2025</p>
-</footer>
+  <footer class="footer-right">
+    <p>© Всемирное агентство счастья 2025</p>
+  </footer>
     
 <!-- ==================== СКРИПТ: бургер-меню ==================== -->
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const burger = document.getElementById("burger");
-    const menu = document.getElementById("menu");
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const burger = document.getElementById("burger");
+      const menu = document.getElementById("menu");
 
-    if (!burger || !menu) return;
+      if (!burger || !menu) return;
 
-    burger.addEventListener("click", () => {
-      menu.classList.toggle("menu--active");
+      burger.addEventListener("click", () => {
+        menu.classList.toggle("menu--active");
+      });
     });
-  });
-</script>
+  </script>
+  
   </body>
 </html>

@@ -21,35 +21,35 @@
   <link rel="stylesheet" href="css/style-ustav.css" />
 </head>
 <body>
-  <header class="header header--ustav">
+<!-- ==================== ШАПКА страницы решений ==================== -->
+  <header style="background-image: url('images/solution2.jpg'); background-size: cover; background-position: center;">
+    <div class="burger-wrapper">
+      <button class="burger" id="burger">☰</button>
+    </div>
+
+    <div class="header__row">
+      <div class="logo">
+        <img src="images/lavr-venok.png" class="logo__image" alt="Лавровый венок" />
+        <div class="logo__text-group">
+          <h1 class="logo__text">Всемирное агентство счастья</h1>
+          <p class="logo__subtitle">Сила, деньги и знания на основе достоинства</p>
+        </div>
+      </div>
+
+      <nav class="menu" id="menu">
+        <ul class="menu__list">
+          <li><a class="menu__list-link" href="index.html">Главное</a></li>
+          <li><a class="menu__list-link" href="happiness.html">Счастье</a></li>
+          <li><a class="menu__list-link" href="about.html">О нас</a></li>
+          <li><a class="menu__list-link" href="#contacts">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+
     <div class="header__top">
-      <div class="container">
-        <div class="header__top-inner">
-          <div class="logo-block">
-            <a class="logo" href="index.html">
-              <img src="images/lavr-venok.png" class="logo__image" alt="Лавровый венок — эмблема агентства" />
-              <h1 class="logo__text">Всемирное агентство счастья</h1>
-              <p class="logo__subtitle">Сила, деньги и знания на основе достоинства человека</p>
-            </a>
-          </div>
-
-          <nav class="menu" id="menu" aria-label="Основная">
-            <ul class="menu__list">
-              <li class="menu__list-item"><a class="menu__list-link" href="index.html">Главное<span></span></a></li>
-              <li class="menu__list-item"><a class="menu__list-link" href="happiness.html">Счастье<span></span></a></li>
-              <li class="menu__list-item"><a class="menu__list-link" href="about.html">О нас<span></span></a></li>
-              <li class="menu__list-item"><a class="menu__list-link" href="contacts.html">Контакты<span></span></a></li>
-            </ul>
-          </nav>
-
-          <button class="burger" id="burger" aria-controls="menu" aria-expanded="false" aria-label="Открыть меню">☰</button>
-        </div>
-
-        <!-- Заголовок страницы -->
-        <div class="header__values">
-          <h2 class="header__title">Устав</h2>
-          <!--  <p class="header__description">Документы Всемирного агентства счастья</p> -->
-        </div>
+      <div class="header__top-inner">
+        <h2 class="header__title">Решение</h2>
+        <p class="header__description">... и другие документы</p>
       </div>
     </div>
   </header>
@@ -70,8 +70,9 @@
     </section>
   </main>
 
-  <footer>
-    <p>&copy; 2025 Всемирное агентство счастья</p>
+<!-- ==================== ПОДВАЛ САЙТА ==================== -->
+  <footer class="footer-right">
+    <p>© Всемирное агентство счастья 2025</p>
   </footer>
 
 <!-- ==================== СКРИПТ: бургер-меню ==================== -->
