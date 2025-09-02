@@ -1,4 +1,4 @@
-/* === 1. Базовая типографика и сброс === */
+/* === Базовая типографика и сброс === */
 *,
 *::before,
 *::after {
@@ -48,7 +48,7 @@ ul li {
   margin-bottom: 0px;
 }
 
-/* === 2. Структурные контейнеры === */
+/* === Структурные контейнеры === */
 main {
   margin-top: 0px;
   border-top: 1px solid rgba(0,0,0,0.15);
@@ -61,7 +61,7 @@ section {
   margin: 0 auto;
 }
 
-/* === 3. Шапка и логотип === */
+/* ===  Шапка и логотип === */
 .header__row {
   display: flex; /* включает flex-контейнер для горизонтального размещения */
   justify-content: space-between; /* логотип слева, меню справа */
@@ -79,7 +79,6 @@ section {
   flex-shrink: 0; /* запрещает сжатие блока при нехватке места */
 }
 
-
 .logo__image {
   width: 48px;
   height: 48px;
@@ -92,17 +91,14 @@ section {
   text-align: left;        /* ← текст внутри тоже по левому краю */
 }
 
-
 .logo__text,
 .logo__subtitle {
   margin: 0;     /* убирает внешние отступы, чтобы текст не раздвигался */
   line-height: 1.2;       /* плотное вертикальное расстояние между строками */
   color: #fff;  /* белый цвет текста — хорошо читается на тёмном фоне */
-
 }
 
-
-/* === 4. Меню (десктоп) === */
+/* === Меню (десктоп) === */
 .menu {
   display: flex;
   align-items: center;
@@ -131,13 +127,12 @@ section {
   white-space: nowrap;         /* предотвращает перенос текста на новую строку */
 }
 
-
 .menu__list-link:hover {
   text-decoration: none;
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-/* === 5. Шапка: визуальные блоки === */
+/* === Шапка: визуальные блоки === */
 
 /* Основной контейнер шапки страницы: задаёт структуру, центрирование и цвет */
 .header__top {
@@ -174,7 +169,6 @@ section {
   color: transparent; /* делает текст невидимым */
   -webkit-text-stroke: 1px white; /* белая обводка по контуру */
 }
-
 /* Подзаголовок или описание: светлый текст с тенью для читаемости */
 .header__description {
   font-size: 1rem;
@@ -184,69 +178,7 @@ section {
   text-shadow: 1px 1px 4px rgba(0,0,0,0.5); /* тень для контраста на фоне */
 }
 
-/* === 6. Блок "Ценности" === */
-
-.system-10c {
-  max-width: 1100px;
-  margin: 0 auto;
-  text-align: center;
-}
-.system-10c-title {
-  font-size: 1.5em; /* размер шрифта относительно базового */
-  margin: 0;        /* убирает внешние отступы */
-  font-weight: 500; /* визуальный акцент текста */
-  color: #ffffff;   /* Цвет*/
-  text-shadow: 0 2px 6px rgba(42,77,105,0.1); /* лёгкая тень — создаёт глубину */
-}
-.system-10c-title a {
-  text-decoration: none;
-}
-.system-10c-title a:hover {
-  text-decoration: none;
-}
-.main__values {
-  max-width: 900px;           /* ограничивает ширину блока для читаемости */
-  text-align: center;         /* выравнивает текст внутри по центру */
-  margin: 0px auto 0 auto;   /* отступ сверху и горизонтальное центрирование */
-  display: flex;              /* включает flex-контейнер */
-  flex-direction: column;     /* размещает дочерние элементы вертикально */
-  align-items: center;        /* центрирует элементы по горизонтали */
-  justify-content: center;    /* центрирует элементы по вертикали (если есть высота) */
-}
-
-.values__grid {
-  display: grid; /* включает CSS Grid — мощный инструмент для построения сеток */
-  grid-template-columns: repeat(6, 1fr); /* создаёт 6 равных колонок */
-  gap: 18px; /* расстояние между ячейками — по горизонтали и вертикали */
-  margin: 0px auto 0 auto; /* отступ сверху и центрирование по горизонтали */
-  justify-items: center; /* выравнивает содержимое каждой ячейки по центру */
-  border: 2px solid rgba(19, 128, 201, 0.15); /* тонкая рамка с прозрачным синим оттенком */
-  padding: 12px 12px; /* внутренние отступы — сверху/снизу и по бокам */
-  background: #faf5e4; /* светлый фон — тёплый, не белый */
-  max-width: 900px; /* ограничивает ширину сетки */
-  border-radius: 12px; /* скруглённые углы — визуальная мягкость */
-  overflow: hidden; /* обрезает всё, что выходит за границы блока */
-}
-.value-item {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  font-size: 1.1em;
-   line-height: 1.2;
-  text-align: left;
-}
-.value-item img {
-  width: 64px;
-  height: 64px;
-  margin-bottom: 8px;
-}
-.value-name {
-  font-weight: bold;
-  color: #2a4d69;
-  font-size: 1.0em;
-}
-
-/* === 7. Футер === */
+/* === Футер === */
 .footer-right {
   background-color: rgba(245, 245, 245, 0);
   color: #333;
