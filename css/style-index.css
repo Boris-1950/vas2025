@@ -6,7 +6,8 @@
 }
 .system-10c-title {
   font-size: 1.5em; /* размер шрифта относительно базового */
-  margin: 0;        /* убирает внешние отступы */
+  margin-top: 12px; /* отступ сверху */
+  margin-bottom: 4px; /* отступ снизу */
   font-weight: 500; /* визуальный акцент текста */
   color: #ffffff;   /* Цвет*/
   text-shadow: 0 2px 6px rgba(42,77,105,0.1); /* лёгкая тень — создаёт глубину */
@@ -44,7 +45,7 @@
   flex-direction: column;
   align-items: flex-start;
   font-size: 1.1em;
-   line-height: 1.2;
+  line-height: 1.2;
   text-align: left;
 }
 .value-item img {
