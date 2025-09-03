@@ -40,6 +40,36 @@
   border-radius: 12px; /* скруглённые углы — визуальная мягкость */
   overflow: hidden; /* обрезает всё, что выходит за границы блока */
 }
+
+/* Адаптивность для сетки ценностей */
+@media (max-width: 1200px) {
+  .values__grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (max-width: 900px) {
+  .values__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .values__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 8px;
+  }
+  .value-item img {
+    width: 48px;
+    height: 48px;
+  }
+}
+@media (max-width: 400px) {
+  .values__grid {
+    grid-template-columns: 1fr;
+    gap: 6px;
+    padding: 4px;
+  }
+}
 .value-item {
   display: flex;
   flex-direction: column;
@@ -52,6 +82,9 @@
   width: 64px;
   height: 64px;
   margin-bottom: 8px;
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 .value-name {
   font-weight: bold;
