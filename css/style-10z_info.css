@@ -1,38 +1,36 @@
-
 .values__grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 24px;
-  margin: 12px auto;
-  max-width: 1100px;
-  padding: 22px 12px;
-  background: #fafcff;
-  border: 2px solid #e0e6ef;
-  border-radius: 12px; /* скруглённые углы — визуальная мягкость */
-
+  display: flex;                /* Включает flex-контейнер для сетки ценностей */
+  flex-wrap: wrap;              /* Позволяет элементам переноситься на новую строку при нехватке места */
+  justify-content: center;      /* Центрирует все элементы внутри сетки по горизонтали */
+  gap: 24px;                    /* Задает расстояние между элементами сетки */
+  margin: 12px auto;            /* Отступы сверху/снизу и автоматическое центрирование по горизонтали */
+  max-width: 1100px;            /* Ограничивает максимальную ширину сетки */
+  padding: 22px 12px;           /* Внутренние отступы сверху/снизу и по бокам */
+  background: #fafcff;          /* Светлый фон для сетки */
+  border: 2px solid #e0e6ef;    /* Светлая рамка вокруг сетки */
+  border-radius: 12px;          /* Скругленные углы для визуальной мягкости */
 }
 
 .value-item {
-  flex: 1 1 450px;
-  max-width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  }
+  flex: 1 1 450px;              /* Элемент занимает минимум 1 часть, может расти до 450px */
+  max-width: 100%;              /* Не выходит за пределы контейнера */
+  display: flex;                /* Включает flex-контейнер для содержимого элемента */
+  flex-direction: column;       /* Элементы внутри располагаются вертикально */
+  align-items: center;          /* Центрирует содержимое по горизонтали */
+  text-align: center;           /* Центрирует текст внутри элемента */
+}
 
 .value-item img {
-  height: 450px;
-  width: auto;
-  max-width: 100%;
-  object-fit: contain;
-  margin-bottom: 8px;
-  border-radius: 12px; /* скруглённые углы — визуальная мягкость */
+  height: 450px;                /* Фиксированная высота изображения */
+  width: auto;                  /* Ширина подстраивается автоматически */
+  max-width: 100%;              /* Не выходит за пределы контейнера */
+  object-fit: contain;          /* Изображение сохраняет пропорции и полностью помещается в контейнер */
+  margin-bottom: 8px;           /* Отступ снизу от изображения до текста */
+  border-radius: 12px;          /* Скругленные углы для изображения */
 }
 
 .value-name {
-  font-weight: bold;
-  color: #2a4d69;
-  font-size: 1.0em;
+  font-weight: bold;            /* Жирное начертание для названия ценности */
+  color: #2a4d69;               /* Темно-синий цвет текста */
+  font-size: 1.0em;             /* Стандартный размер шрифта */
 }
