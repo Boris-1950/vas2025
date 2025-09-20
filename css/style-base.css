@@ -139,7 +139,8 @@ section {
   display: flex;
   flex-direction: column; /* вертикальное расположение дочерних элементов */
   align-items: center; /* горизонтальное центрирование */
-  justify-content: center; /* вертикальное центрирование */
+  /*justify-content: center; /* вертикальное центрирование */
+  justify-content: flex-end; /* Выравнивание в конец колонки (снизу) */
   text-align: center; /* выравнивание текста */
   color: #cbf751; /* базовый цвет текста */
   padding: 0;
@@ -151,8 +152,17 @@ section {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  /*justify-content: center; */
+  justify-content: flex-end; /* Выравнивание в конец колонки (снизу) */
+  /*Альтернативные варианты выравнивания:
+justify-content: flex-start - в начале колонки (сверху) ✅ по умолчанию
+justify-content: center - по центру колонки ✅
+justify-content: flex-end - в конце колонки (снизу) ✅
+justify-content: space-between - равномерно распределяет пространство между элементами
+justify-content: space-around - равномерно распределяет пространство вокруг элементов
+Важно: При flex-direction: column ось меняется - justify-content работает по вертикальной оси, а align-items - по горизонтальной.*/
   position: relative; /* позволяет позиционировать дочерние элементы */
+
   gap: 6px; /* расстояние между заголовком и описанием */
   padding: 6px 12px; /* внутренние отступы */
   animation: fadeIn 2s ease-in-out; /* плавное появление */
