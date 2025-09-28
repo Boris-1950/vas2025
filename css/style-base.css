@@ -25,11 +25,11 @@ a {
 }
 
 h1, h2, h3 {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 20px;
-  text-align: center;
-  color: beige;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    color: beige;
 }
 
 p {
@@ -61,6 +61,13 @@ section {
   padding: 5px 5px;
   max-width: 900px;
   margin: 0 auto;
+}
+.separator-line {
+  height: 5px; /* можно изменить по визуальному ритму */
+  background: none;
+  margin: 0;
+  padding: 0;
+  display: block;
 }
 
 /* ===  Шапка и логотип === */
