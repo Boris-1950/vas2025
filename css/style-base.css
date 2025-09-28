@@ -5,7 +5,8 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   width: 100%;
@@ -24,22 +25,24 @@ a {
   color: inherit;
 }
 
-h1, h2, h3 {
-    font-size: 16px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    text-align: center;
-    color: beige;
+h1,
+h2,
+h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+  color: beige;
 }
 
 p {
-    margin-bottom: 1em;
-    line-height: 1.4;
-    text-align: left;
-    color: #252424;
-    font-family: Arial, sans-serif;
-    font-weight: normal;
-    font-style: normal;
+  margin-bottom: 1em;
+  line-height: 1.4;
+  text-align: left;
+  color: #252424;
+  font-family: Arial, sans-serif;
+  font-weight: normal;
+  font-style: normal;
 }
 
 ul {
@@ -53,7 +56,8 @@ ul li {
 /* === Структурные контейнеры === */
 main {
   margin-top: 5px;
-  border-top: 1px solid rgba(0,0,0,0.15);
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+  background: linear-gradient(to bottom, #86c120, #061123);
   margin-bottom: 5px;
 }
 
@@ -97,14 +101,14 @@ section {
   display: flex;
   flex-direction: column;
   align-items: flex-start; /* ← выравнивание по левому краю */
-  text-align: left;        /* ← текст внутри тоже по левому краю */
+  text-align: left; /* ← текст внутри тоже по левому краю */
 }
 
 .logo__text,
 .logo__subtitle {
-  margin: 0;     /* убирает внешние отступы, чтобы текст не раздвигался */
-  line-height: 1.2;       /* плотное вертикальное расстояние между строками */
-  color: #fff;  /* белый цвет текста — хорошо читается на тёмном фоне */
+  margin: 0; /* убирает внешние отступы, чтобы текст не раздвигался */
+  line-height: 1.2; /* плотное вертикальное расстояние между строками */
+  color: #fff; /* белый цвет текста — хорошо читается на тёмном фоне */
 }
 
 /* === Меню (десктоп) === */
@@ -127,13 +131,13 @@ section {
 }
 
 .menu__list-link {
-  padding: 4px 4px;           /* внутренние отступы: вертикальные и горизонтальные */
-  line-height: 1.2;            /* плотность текста — компактно, но читаемо */
-  text-decoration: none;       /* убирает подчёркивание у ссылок */
-  color: rgb(62, 63, 65);   /* цвет */
-  font-size: 1.0em;            /* размер шрифта */
-  text-align: center;          /* выравнивание текста по центру (если ширина фиксирована) */
-  white-space: nowrap;         /* предотвращает перенос текста на новую строку */
+  padding: 4px 4px; /* внутренние отступы: вертикальные и горизонтальные */
+  line-height: 1.2; /* плотность текста — компактно, но читаемо */
+  text-decoration: none; /* убирает подчёркивание у ссылок */
+  color: rgb(62, 63, 65); /* цвет */
+  font-size: 1em; /* размер шрифта */
+  text-align: center; /* выравнивание текста по центру (если ширина фиксирована) */
+  white-space: nowrap; /* предотвращает перенос текста на новую строку */
 }
 
 .menu__list-link:hover {
@@ -194,7 +198,7 @@ justify-content: space-around - равномерно распределяет п
   color: #f0f0f0;
   margin: 0;
   line-height: 1.4;
-  text-shadow: 1px 1px 4px rgba(0,0,0,0.5); /* тень для контраста на фоне */
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5); /* тень для контраста на фоне */
 }
 
 /* === Футер === */
