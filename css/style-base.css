@@ -33,10 +33,13 @@ h1, h2, h3 {
 }
 
 p {
-  margin-bottom: 1em;
-  line-height: 1.4;
-  text-align: left;
-  color: #252424;
+    margin-bottom: 1em;
+    line-height: 1.4;
+    text-align: left;
+    color: #252424;
+    font-family: Arial, sans-serif;
+    font-weight: normal;
+    font-style: normal;
 }
 
 ul {
@@ -189,7 +192,6 @@ justify-content: space-around - равномерно распределяет п
 
 /* === Футер === */
 .footer-right {
-  background-color: rgba(245, 245, 245, 0);
   color: #333;
   font-size: 14px;
   text-align: center;
