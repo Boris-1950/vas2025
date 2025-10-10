@@ -21,6 +21,7 @@
     "symbol_url": "https://boris-1950.github.io/vas2025/symbols/happiness.png",
     "symbol_small": "https://boris-1950.github.io/vas2025/symbols/happiness50.png",
     "illustration": { "@id": "https://vas2025.ru/images/D2025" },
+    "P1072": "File:D2025.jpg",
     "category": "Базовая сущность",
     "relation_to_dignity": "Возникает при реализации ценностей, основанных на достоинстве."
   },
