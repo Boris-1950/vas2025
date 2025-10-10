@@ -55,6 +55,7 @@
     </style>
 
     <!-- Структурированные данные Organization -->
+
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -78,121 +79,99 @@
       defer
     ></script>
     <script type="application/ld+json">
-            {
-              "@context": "https://schema.org",
-              "@type": "DefinedTermSet",
-              "name": "Система 10-Ц",
-              {
+      {
         "@context": "https://schema.org",
         "@type": "DefinedTermSet",
         "name": "Система 10-Ц",
-        "description": "Система 10-Ц — набор из 10 базовых ценностей, формирующих пространство счастья человека и мира на основе достоинства.",
+        "description": "Набор из 10 базовых ценностей, формирующих пространство счастья человека и мира на основе достоинства.",
         "url": "https://vas2025.ru/10-z_info.html",
         "hasDefinedTerm": [
           {
             "@type": "DefinedTerm",
-            "identifier": "B01",
+            "@id": "https://vas2025.ru/entities/B01",
             "name": "Достоинство человека",
-            "description": "Существенный признак, неотъемлемое свойство человека, составляющее основу признания и уважения всех его прав и свобод.",
-            "image": "https://boris-1950.github.io/vas2025/symbols/Dignity10_50.png",
-            "subjectOf": {
-              "@type": "DefinedTermSet",
-              "name": "Система 10-Ц",
-              "hasDefinedTerm": ["V01", "V02", "V03", "V04", "V05", "V06", "V07", "V08", "V09", "V10"]
-            }
+            "description": "Неотъемлемое свойство человека, составляющее основу признания и уважения всех его прав и свобод.",
+            "image": "https://boris-1950.github.io/vas2025/symbols/dignity.png"
           },
           {
             "@type": "DefinedTerm",
-            "identifier": "B02",
+            "@id": "https://vas2025.ru/entities/B02",
             "name": "Счастье человека",
-            "description": "Сумма ценностей, индекс благополучия человека.",
-            "image": "https://boris-1950.github.io/vas2025/symbols/happiness.png",
-            "isBasedOn": {
-              "@type": "DefinedTermSet",
-              "name": "Система 10-Ц",
-              "hasDefinedTerm": ["V01", "V02", "V03", "V04", "V05", "V06", "V07", "V08", "V09", "V10"]
-            }
+            "description": "Сумма ценностей или уровень благополучия человека.",
+            "image": "https://boris-1950.github.io/vas2025/symbols/happiness.png"
           },
           {
             "@type": "DefinedTerm",
-            "identifier": "V01",
+            "@id": "https://vas2025.ru/values/V01",
             "name": "Безопасность",
-            "description": "Защищённость физического, психического и социального благополучия.",
+            "description": "Защита благополучия.",
             "image": "https://boris-1950.github.io/vas2025/symbols/Safety.png"
           },
           {
             "@type": "DefinedTerm",
-            "identifier": "V02",
+            "@id": "https://vas2025.ru/values/V02",
             "name": "Деньги",
-            "description": "Средства платежа и обмена.",
+            "description": "Средство платежа.",
             "image": "https://boris-1950.github.io/vas2025/symbols/Money.png"
           },
           {
             "@type": "DefinedTerm",
-            "identifier": "V03",
+            "@id": "https://vas2025.ru/values/V03",
             "name": "Дом",
-            "description": "Сооружение для жизни, покоя и самовыражения.",
+            "description": "Сооружение для жизни людей.",
             "image": "https://boris-1950.github.io/vas2025/symbols/House.png"
           },
           {
             "@type": "DefinedTerm",
-            "identifier": "V04",
+            "@id": "https://vas2025.ru/values/V04",
             "name": "Здоровье",
             "description": "Физическое, психическое и социальное благополучие.",
             "image": "https://boris-1950.github.io/vas2025/symbols/Health.png"
           },
           {
             "@type": "DefinedTerm",
-            "identifier": "V05",
+            "@id": "https://vas2025.ru/values/V05",
             "name": "Любовь",
-            "description": "Чувство глубокого благоговения перед Жизнью и её проявлениями.",
+            "description": "Глубокое чувство благоговения перед Жизнью.",
             "image": "https://boris-1950.github.io/vas2025/symbols/Love.png"
           },
           {
             "@type": "DefinedTerm",
-            "identifier": "V06",
+            "@id": "https://vas2025.ru/values/V06",
             "name": "Образование",
-            "description": "Структура знаний, умений и навыков, получаемых в ходе непрерывного образования.",
+            "description": "Знания и умения, усвоенные в обучении.",
             "image": "https://boris-1950.github.io/vas2025/symbols/Education.png"
           },
           {
             "@type": "DefinedTerm",
-            "identifier": "V07",
+            "@id": "https://vas2025.ru/values/V07",
             "name": "Работа",
-            "description": "Деятельность, труд — приложение усилий во времени или в пути.",
+            "description": "Усилия за пройденный путь.",
             "image": "https://boris-1950.github.io/vas2025/symbols/Job.png"
           },
           {
             "@type": "DefinedTerm",
-            "identifier": "V08",
+            "@id": "https://vas2025.ru/values/V08",
             "name": "Свобода",
-            "description": "Полномочия человека в сообществе.",
+            "description": "Полномочия в сообществе.",
             "image": "https://boris-1950.github.io/vas2025/symbols/Freedom.png"
           },
           {
             "@type": "DefinedTerm",
-            "identifier": "V09",
+            "@id": "https://vas2025.ru/values/V09",
             "name": "Семья",
-            "description": "Близкие по рождению, браку или иному основанию люди.",
+            "description": "Близкие люди по рождению, браку или иначе.",
             "image": "https://boris-1950.github.io/vas2025/symbols/Family.png"
           },
           {
             "@type": "DefinedTerm",
-            "identifier": "V10",
+            "@id": "https://vas2025.ru/values/V10",
             "name": "Этика",
-            "description": "Правила достижения счастья в обществе.",
+            "description": "Правила совместного достижения Счастья.",
             "image": "https://boris-1950.github.io/vas2025/symbols/Ethics.png"
           }
-        ],
-        "isPartOf": {
-          "@type": "CreativeWork",
-          "name": "Всемирное агентство счастья",
-          "url": "https://vas2025.ru/",
-          "description": "Глобальная инициатива по развитию достоинства и счастья человека."
-        }
+        ]
       }
-
-            }
     </script>
   </head>
   <body>
@@ -261,7 +240,28 @@
                 ><span class="value-name" style="color: #ff0000"
                   >Достоинство</span
                 >
-                — основа, неотъемлемое свойство.</span
+                — основа, главное свойство человека.</span
+              >
+            </div>
+            <div class="value-item">
+              <img src="images/Safety.png" alt="Безопасность" />
+              <span
+                ><span class="value-name">Безопасность</span> — защита
+                благополучия.</span
+              >
+            </div>
+            <div class="value-item">
+              <img src="images/Money.png" alt="Деньги" />
+              <span
+                ><span class="value-name">Деньги</span> — средство
+                платежа.</span
+              >
+            </div>
+            <div class="value-item">
+              <img src="images/House.png" alt="Дом" />
+              <span
+                ><span class="value-name">Дом</span> — сооружение для жизни
+                людей.</span
               >
             </div>
             <div class="value-item">
@@ -271,7 +271,6 @@
                 психическое и социальное благополучие.</span
               >
             </div>
-
             <div class="value-item">
               <img src="images/Love.png" alt="Любовь" />
               <span
@@ -279,44 +278,11 @@
                 благоговения пред Жизнью.</span
               >
             </div>
-
-            <div class="value-item">
-              <img src="images/Ethics.png" alt="Этика" />
-              <span
-                ><span class="value-name">Этика</span> — правила совместного
-                достижения Счастья.</span
-              >
-            </div>
-
             <div class="value-item">
               <img src="images/Education.png" alt="Образование" />
               <span
                 ><span class="value-name">Образование</span> — знания и умения,
                 усвоенные в обучении.</span
-              >
-            </div>
-
-            <div class="value-item">
-              <img src="images/Family.png" alt="Семья" />
-              <span
-                ><span class="value-name">Семья</span> — близкие люди по
-                рождению, браку или иначе.</span
-              >
-            </div>
-
-            <div class="value-item">
-              <img src="images/Freedom.png" alt="Свобода" />
-              <span
-                ><span class="value-name">Свобода</span> — полномочия в
-                сообществе.</span
-              >
-            </div>
-
-            <div class="value-item">
-              <img src="images/House.png" alt="Дом" />
-              <span
-                ><span class="value-name">Дом</span> — сооружение для жизни
-                людей.</span
               >
             </div>
 
@@ -327,23 +293,27 @@
                 путь.</span
               >
             </div>
-
             <div class="value-item">
-              <img src="images/Money.png" alt="Деньги" />
+              <img src="images/Freedom.png" alt="Свобода" />
               <span
-                ><span class="value-name">Деньги</span> — средство
-                платежа.</span
+                ><span class="value-name">Свобода</span> — полномочия в
+                сообществе.</span
               >
             </div>
-
             <div class="value-item">
-              <img src="images/Safety.png" alt="Безопасность" />
+              <img src="images/Family.png" alt="Семья" />
               <span
-                ><span class="value-name">Безопасность</span> — защита
-                благополучия.</span
+                ><span class="value-name">Семья</span> — близкие люди по
+                рождению, браку или иначе.</span
               >
             </div>
-
+            <div class="value-item">
+              <img src="images/Ethics.png" alt="Этика" />
+              <span
+                ><span class="value-name">Этика</span> — правила совместного
+                достижения Счастья.</span
+              >
+            </div>
             <div class="value-item">
               <img src="images/happiness.png" alt="Символ счастья" />
               <span
