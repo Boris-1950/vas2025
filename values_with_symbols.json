@@ -27,8 +27,8 @@
   {
     "@type": "ImageObject",
     "@id": "https://vas2025.ru/images/D2025",
-    "name": "Схема счастья человека",
-    "description": "Визуализация координат счастья и достоинства в системе VAS2025.",
+    "name": "Пространство счастья человека",
+    "description": "Визуализация физических и гуманитарных координат счастья.",
     "contentUrl": "https://boris-1950.github.io/vas2025/D2025.jpg",
     "encodingFormat": "image/jpeg",
     "subjectOf": { "@id": "https://vas2025.ru/entities/B02" }
