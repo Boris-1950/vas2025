@@ -57,3 +57,11 @@ footer {
   color: #666;
   padding: 10px 0;
 }
+.centered-section {
+  max-width: 800px;
+  margin: 3em auto;
+  padding: 2em;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
