@@ -9,7 +9,7 @@
     "symbol_url": "https://boris-1950.github.io/vas2025/symbols/dignity.png",
     "symbol_small": "https://boris-1950.github.io/vas2025/symbols/dignity50.png",
     "category": "Базовая сущность",
-    "relation_to_happiness": "Является источником всех ценностей системы 10-Ц."
+    "relation_to_happiness": "Является источником всех ценностей системы 10Ц."
   },
   {
     "@type": "DefinedTerm",
